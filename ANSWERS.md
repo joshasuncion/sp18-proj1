@@ -20,6 +20,8 @@ For redirect_to I used trainer_path(trainer) where trainer is set equal to curre
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
+Putting the line flash[:error] = @pokemon.errors.full_messages.to_sentence works because @pokemon.errors.full_messages.to_sentence takes any validation errors that come from the pokemon form, and flash[:error] applies the error to the page layout so that the error will be flashed when application.html.erb renders the page.
+
 # Give us feedback on the project and decal below!
 
 # Extra credit: Link your Heroku deployed app
