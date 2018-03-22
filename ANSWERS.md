@@ -12,9 +12,11 @@ The line of code creates a "Throw a Pokeball!" button, and when it's pressed, ca
 
 # Question 3: What would you name your own Pokemon?
 
-I would name it Rubysaur.
+I would name it Rubysaur or Rubymander.
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
+
+For redirect_to I used trainer_path(trainer) where trainer is set equal to current_trainer, since trainer_path needs a trainer id. In order to get the path to redirect to the current trainer's profile page, I passed in trainer.
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
